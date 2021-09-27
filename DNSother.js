@@ -10,7 +10,7 @@
         let arg = Object.fromEntries($argument.split("&").map((item) => item.split("=")));
         panel.icon = arg.icon;
         panel["icon-color"] = arg.color;
-        panel.title = arg.title;
+        panel.["title"] = arg.title;
     }
     $done(panel);
 })();
